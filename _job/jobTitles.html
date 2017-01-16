@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="container"> 
+         
+  <table class="table">
+   <div ng-repeat="j in jobs">
+  <tbody>
+  
+      <tr ng-repeat="j in jobs">
+        <td><h1>{{j.jobTitle}}</h1></td>
+        <td><strong>{{j.jobDescription}}</strong>
+        <p><small>SKILLS:</small>{{j.skillsRequired}}</p></td>
+        <td><span class="glyphicon glyphicon-map-marker"></span>{{j.location}}</td>
+        <td><i class="fa fa-inr" style="font-size:24px"></i>{{j.salary}}</td>
+        
+        <td><button type="button" class="btn btn-primary">Apply</button></td>
+        
+      </tr>
+    
+    </tbody>
+   
+  </table>
+ 
+</div>
+
+
+
+
+
+
+<!-- <div ng-repeat="j in jobs">
+<div class="panel panel-default">
+
+  <div class="panel-heading">TITLE:{{j.jobTitle}}</div>
+  <div class="panel-body">desc:{{j.jobDescription}}</div>
+  <div class="panel-body">skills:{{j.skillsRequired}}</div>
+  <div class="panel-body">salary:{{j.salary}}</div>
+  <div class="panel-body">location:{{j.location}}</div>
+</div>
+</div> -->
+
+</body>
+</html>
